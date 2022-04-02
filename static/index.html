@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""
+  ></script>
+  <link rel="stylesheet" href="/css/index.css">
+  <title>Об'єкти нерухомості</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="top-nav">
+        <a href="index.html">Головна</a>
+        <a href="add.html">Створити</a>
+      </nav>
+    </header>
+    <div class="row flex">
+      <div class="col-70">
+        <div class="map" id="map"></div>
+      </div>
+      <div class="col-30">
+        <div class="content overflow" id="content"></div>
+      </div>
+    </div>
+    <footer class="footer"> ФУТЕР </footer>
+  </div>
+  <!-- modal  -->
+  <div class="back" id="modal_back">
+    <div class="modal" id="modal">
+      <div class="modal__header space-between">
+        <div class="modal__header-title" id="modal_title">MODAL TITLE</div>
+        <div class="modal__header-close_btn" id="modal_close_btn">&times;</div>
+      </div>
+      <div class="modal__body" id="modal_body">
+        MODAL BODY
+      </div>
+    </div>
+  </div>
+  <script src="/js/modal.js" charset="utf-8"></script>
+  <script src="/js/map.js" charset="utf-8"></script>
+  <script src="/js/items.js" charset="utf-8"></script>
+</body>
+</html>
