@@ -36,7 +36,7 @@ db.close((err) => {
 
 const app = express();
 
-PORT = 8000;
+const PORT = process.env.PORT || 80;
 
 app.use(cors());
 app.use(fileUpload({
