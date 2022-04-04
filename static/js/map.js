@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8000/api';
+const API_URL = 'https://estate-nodejs.herokuapp.com/api';
 const initial_position = [47.8582, 35.1087];
 const map = L.map('map').setView(initial_position, 10);
 
